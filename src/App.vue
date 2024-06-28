@@ -33,11 +33,11 @@
         </div>
         <el-backtop :right="100" :bottom="100" target="#content-wrap"/>
         <speed-insights/>
-        <analytics/>
+        <inject/>
     </div>
 </template>
 <script setup>
-import {Analytics} from "@vercel/analytics/react"
+import {inject} from "@vercel/analytics"
 import {SpeedInsights} from "@vercel/speed-insights/vue"
 import style from "@/assets/style/app.module.scss";
 import {ref} from "vue";
